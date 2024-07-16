@@ -1,3 +1,5 @@
+# POC FILE: to test the functionality before making complete project. this can be used to get results without running
+# server to test the functionality
 # Import necessary libraries
 import os
 from pinecone import Pinecone
