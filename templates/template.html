@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Test</title>
+</head>
+<html>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <h2>Upload JSON Question File</h2>
+        <input type="file" name="json_file">
+        <h2>Upload Data File</h2>
+        <input type="file" name="data_file">
+        <h2>Upload JSON Data File</h2>
+        <input type="file" name="json_data_file">
+        <p></p>
+        <input type="submit" value="Upload">
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                <div class="message_flash">{{ message }}</div>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
